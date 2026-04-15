@@ -16,7 +16,7 @@
   \**********************/
 (__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
 
-eval("{__webpack_require__.r(__webpack_exports__);\nconsole.log(\"Hello restaurant customers!\");\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?\n}");
+eval("{__webpack_require__.r(__webpack_exports__);\nObject(function webpackMissingModule() { var e = new Error(\"Cannot find module './styles.css'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nconst content = document.querySelector('#content');\nconst footer = document.createElement('footer');\nfooter.textContent =\"Made with ♥ by Mostafa\"\ncontent.appendChild(footer)\n\n\n\n//# sourceURL=webpack://restaurant/./src/index.js?\n}");
 
 /***/ }
 
