@@ -24,10 +24,12 @@ HomeBtn.addEventListener ("click", ()=>{
 
 MenuBtn.addEventListener ("click", ()=>{
     content.innerHTML="";
-   
+   content.appendChild(MenuContent)
+  
 })
 
 AboutBtn.addEventListener ("click", ()=>{
     content.innerHTML="";
-   
+   content.appendChild(AboutContent)
+  
 })
