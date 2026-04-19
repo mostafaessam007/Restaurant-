@@ -1,8 +1,8 @@
 import "./style.css"
 
-import {HomeContent} from "./Home.js"
-import {MenuContent} from "./Menu.js"
-import {AboutContent} from "./About.js"
+import {homeContentFun} from "./Home.js"
+import {menuContentFun} from "./Menu.js"
+import {aboutContentFun} from "./About.js"
 
 
 // import every page from it's JS file 
@@ -15,21 +15,24 @@ const MenuBtn = document.querySelector('#MenuBtn')
 const AboutBtn = document.querySelector('#AboutBtn')
 const content = document.querySelector('#content');
 
+content.appendChild(homeContentFun())
+
+
 // add event listenrs to every button in nav to delete the content in  content div
 HomeBtn.addEventListener ("click", ()=>{
     content.innerHTML="";
-   content.appendChild(HomeContent)
+   content.appendChild(homeContentFun())
     
 })
 
 MenuBtn.addEventListener ("click", ()=>{
     content.innerHTML="";
-   content.appendChild(MenuContent)
+   content.appendChild(menuContentFun())
   
 })
 
 AboutBtn.addEventListener ("click", ()=>{
     content.innerHTML="";
-   content.appendChild(AboutContent)
+   content.appendChild(aboutContentFun())
   
 })
