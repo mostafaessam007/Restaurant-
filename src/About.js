@@ -2,13 +2,23 @@
 
 export const aboutContentFun=() =>{
 const aboutContent= document.createElement('div');
-const aboutInfo = document.createElement('div');
-aboutInfo.classList.add('menuItem');
-aboutInfo.textContent="This is the restuarant's full history"
-aboutContent.appendChild(aboutInfo)
+aboutContent.classList.add('aboutContent');
+
+// About container
+const aboutContainer = document.createElement('div');
+aboutContainer.classList.add('aboutContainer');
+
+const aboutHead = document.createElement('p');
+aboutHead.classList.add('aboutHead');
+aboutHead.textContent = "Who are we?";
+
+const aboutParagraph = document.createElement('p');
+aboutParagraph.classList.add('aboutParagraph');
+aboutParagraph.textContent = "Yum ".repeat(20) + "burger since 1985!";
+
+aboutContainer.append(aboutHead, aboutParagraph);
+
+aboutContent.appendChild(aboutContainer);
 
 return aboutContent
 }
-
-
-// Write a paragraph about the reseturants's history
